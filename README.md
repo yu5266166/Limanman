@@ -1,14 +1,12 @@
-# 余先生与Limanman
+# AstrBot Plugin Helper 2
 
-这是大作家余先生与Limanman合作的第一个开源项目，包含以下三个 AstrBot 插件：
+这是一个专为 AstrBot 设计的辅助插件，旨在解决插件开发与调试过程中，因 Python `sys.modules` 模块缓存导致热重载（Reload）失效的问题。
 
-1. **astrbot_plugin_helper**：主动缓存清理插件。
-2. **astrbot_plugin_helper2**：自动缓存清理插件。
-3. **astrbot_plugin_send_tool**：高级消息代发工具。
+## 功能特性
 
-## 仓库地址
-https://github.com/yu5266166/Yu-and-Limanman
+- **自动缓存清理**：在插件初始化阶段自动执行。每当本插件被加载或重载时，它会自动识别并清除指定插件（如 `zanwo`, `send_tool` 等）的 Python 内存缓存。
+- **无感运行**：无需大语言模型或用户手动调用工具，实现后台静默清理。
 
-## 作者与版权
-- **策划与思路**：余先生
-- **技术实现与维护**：Limanman (limanman-git)
+## 安装方法
+
+将本插件目录放入 AstrBot 的 `addons/plugins/` 文件夹下，重启 AstrBot 即可自动加载。
