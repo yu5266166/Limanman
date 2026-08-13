@@ -1,0 +1,6 @@
+name: astrbot_plugin_send_tool
+desc: 高级消息代发工具
+help: 高级消息代发工具
+version: v1.0.0
+author: Limanman
+repo: https://github.com/yu5266166/Yu-and-Limanman/tree/main/astrbot_plugin_send_tool
