@@ -1,14 +1,17 @@
-# 余先生与Limanman
+# AstrBot Send Tool
 
-这是大作家余先生与Limanman合作的第一个开源项目，包含以下三个 AstrBot 插件：
+这是一个专为 AstrBot 设计的高级消息发送工具插件，旨在为大语言模型或系统管理员提供跨平台、多账号的私聊消息代发服务。
 
-1. **astrbot_plugin_helper**：主动缓存清理插件。
-2. **astrbot_plugin_helper2**：自动缓存清理插件。
-3. **astrbot_plugin_send_tool**：高级消息代发工具。
+## 功能特性
 
-## 仓库地址
-https://github.com/yu5266166/Yu-and-Limanman
+- **多平台支持**：支持 QQ (aiocqhttp), Telegram, Lark/飞书, 微信 (wechat) 等多种机器人通道。
+- **别名通讯录**：支持在配置文件中设置用户别名与平台映射（格式如 `张三:123456789|telegram`），实现自然语言代发。
+- **安全鉴权**：内置严格的管理员权限校验，保障消息代发通道的安全性。
 
-## 作者与版权
-- **策划与思路**：余先生
-- **技术实现与维护**：Limanman (limanman-git)
+## 安装方法
+
+将本插件目录放入 AstrBot 的 `addons/plugins/` 文件夹下，重启 AstrBot 即可自动加载。
+
+## 使用说明
+
+管理员可以通过调用 `send_private_message` 工具，指定目标用户标识（别名或原始 ID）与消息内容进行跨平台发送。

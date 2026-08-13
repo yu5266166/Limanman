@@ -1,6 +1,0 @@
-name: astrbot_plugin_helper
-desc: 辅助清理缓存插件
-help: 辅助清理缓存
-version: v1.0.0
-author: Limanman
-repo: https://github.com/Limanman/astrbot_plugin_helper
